@@ -1,64 +1,334 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #e8e4d5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+ 
+.hidden-picture {
+  display: none;
+}
+
+
+button {
+  margin: 14px 9px 10px 0px;
+  border-radius: 1px;
+  height: 35px;
+  width: 151px;
+  font-size: 14px;
+  border: solid 2px;
+  padding-left: 21px;
+  background-color: #c4aa71;
+  vertical-align: top;
 }
 
 .page__container {
   display: flex; 
-  width: 97%;
-  border: solid black 1px;
-  margin: 5px auto;
+  width: 100%;
+/*  border: solid black 1px;
+*/  height: 100%;
+  margin: 0;
 }
 
-
 .main__container {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  border: solid black 1px;
-  width: 60%;
-  height: 100vh;
+/*  border: solid black 1px;
+*/width: 60vw;
+  height: 100%;
 }
 
 .box {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
   width: 33.33%;
-  height: 33.33%;
+  height: 275px;
+  flex-grow: 1;
+}
+
+h1 {
+  padding: 14px 0 0;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.box p {
+  position:relative;
+  top:20px;
+}
+
+.box:hover {
+  opacity: 0.50;
 }
 
 .main__box-1 {
-  border: solid black 1px;
+  text-align: left;
   width: 66.66%;
+  flex-grow: 2;
+  padding: 20px 40px 20px 20px;
+  background-color: #c4aa71;
+  font-weight: 300;
 }
 
+.icon-1 {}
+
 .main__box-2 {
-  border: solid black 1px;
+  background-color: #8B7989;
+
+}
+
+.icon-2 {
+  background-image: url('./images/tree.svg');
+  height: 50px;
+  width: 50px;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main__box-3 {
-  border: solid black 1px;
+   background-color: #858c89;
+}
+
+.icon-3 {
+  background-image: url('./images/tree.svg');
+  height: 50px;
+  width: 50px;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .main__box-4 {
-  border: solid black 1px;
+  background-color: #4C647A;
+}
+
+.icon-4 {
+  background-image: url('./images/tree.svg');
+  height: 50px;
+  width: 50px;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main__box-5 {
-  border: solid black 1px;
+  background-color: #c4aa71;
+}
+
+.icon-5 {
+  background-image: url('./images/oragami-bird.svg');
+  height: 50px;
+  width: 50px;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main__box-6 {
-  border: solid black 1px;
+  background-color: #8B7989;
+}
+
+.icon-6 {
+  background-image: url('./images/puke.svg');
+  height: 50px;
+  width: 50px;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main__box-7 {
-  border: solid black 1px;
+  background-color: #858c89;
+}
+
+.icon-7 {
+   background-image: url('./images/bag.svg');
+  height: 50px;
+  width: 50px;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main__box-8 {
-  border: solid black 1px;
+ background-color: #4C647A;
 }
 
-/*---------------------------------------------
-.photo__container {
-  border: solid black 1px;
-  width: 40%;
-  height: 100vh;
+.icon-8 {
+  background-image: url('./images/box.svg');
+  height: 50px;
+  width: 50px;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+/*---------------------------------------------*/
+.hidden-picture {
+  display: none;
 }
+
+.photo__container {
+/*  border: solid black 1px;
+*/  width: 38%;
+  display: inline-block;
+  background-image: url('images/austin_cat_2by3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -20px;
+  /*background-position-y: 65px;*/
+}
+
+.left-main__photo{}
+
+.arrow-left{}
+
+.arrow-right{}
+
+/*----------------------------------------------*/
+
+@media only screen and (max-width: 1250px) {
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+  
+  }
+
+@media only screen and (max-width: 1250px) {
+   .main__box-1 {
+      width: 100%;
+      height: 200px;
+      flex-grow:2;
+    }
+
+   .page__container {
+      display: flex; 
+      width: 100%;
+    /*  border: solid black 1px;
+*/      height:103%;
+    }
+
+    .main__container {
+      display: inline-flex;
+      flex-wrap: wrap;
+    /*  border: solid black 1px;
+*/      width: 50%;
+      height: 100%;
+    }
+    .photo__container {
+    /*  border: solid black 1px;
+*/      width: 50%;
+      display: inline-block;
+      background-image: url('images/austin_cat_2by3.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: -1px;
+  }
+
+  .main__box-6 {
+  /*  border: solid black 1px;
+  */  background-color: #8B7989;
+  }
+  .main__box-7 {
+  /*  border: solid black 1px;
+  */  background-color: #858c89;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+    .main__box-1 p {
+      display: none;
+     }
+     
+     h1{
+      padding: 32px 0 0;
+     }     
+}
+
+@media only screen and (max-width: 790px) {
+    .hidden-picture {
+      width: 100%;
+      display: block;
+      height: 900px;
+      background-image: url('images/austin_cat_2by1.jpg'));
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: -20px;
+    }
+
+    button {
+      margin: 14px 9px 10px 0px;
+      border-radius: 1px;
+      height: 35px;
+      width: 151px;
+      font-size: 14px;
+      border: solid 2px;
+      background-color: #c4aa71;
+      padding: 10px;
+      padding-left: 0;
+    }
+  
+    .main__container {
+      width: 100%;
+    }
+
+    .main__box-1 {
+      width: 100%;
+      height:200px;
+    }
+  
+    .box {
+      display: flex;  
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 200px;
+      flex-grow: 1;
+    }
+
+    .photo__container {
+      display: none;
+
+  }
+
+  @media only screen and (max-width: 330px) {
+    button {
+      margin: 14px 9px 10px 0px;
+      border-radius: 1px;
+      height: 35px;
+      width: 107px;
+      font-size: 14px;
+      border: solid 2px;
+      background-color: #c4aa71;
+      padding: 10px;
+      padding-left: 0;
+      font-size: 10px;
+    }
+
+  .box {
+      display: flex;  
+      justify-content: center;
+      align-items: center;
+      width: 320px;
+      height: 200px;
+      flex-grow: 1;
+    }
+    .hidden-picture {
+      width: 110%;
+      display: block;
+      height: 800px;
+      background-image: url('images/austin_cat_2by1.jpg'));
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: -20px;
+    }
+
+
+
+
